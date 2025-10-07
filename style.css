@@ -625,8 +625,8 @@ textarea {
   }
 }
 
-/* ----------- للموبايل (من 600 px وأقل) ----------- */
-@media (max-width: 600px) {
+/* ----------- للموبايل (700px وأقل) ----------- */
+@media (max-width: 700px) {
   header {
     height: 70vh;
     background-position: center;
