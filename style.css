@@ -1,0 +1,794 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .container {
+  max-width: 1100px;
+  margin: auto;
+} */
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 1px solid #fff;
+}
+
+.btn-secondary,
+.btn-third:hover {
+  background: #383848;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-third {
+  background: #e4b95b;
+}
+
+.primary-text {
+  color: #e4b95b;
+}
+
+header {
+  height: 100vh;
+  background: url("./img/home_bg.jpeg") center center/cover no-repeat;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.6);
+}
+
+header * {
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container img {
+  width: 140px;
+  height: auto;
+  padding: 0 20px;
+  margin: 15px 0 0 100px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+nav {
+  margin: 30px 30px 0 0;
+  padding: 15px 20px;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid #e4b95b;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.content {
+  text-align: center;
+  color: white;
+  justify-content: center;
+  margin-top: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.content h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.content h3 span {
+  color: #e4b95b;
+}
+
+.content p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.btn {
+  padding: 14px 30px;
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+.btn:hover {
+  background-color: #e4b95b;
+  border: 1px solid;
+  transition: 0.5s;
+}
+
+.btn-primary {
+  margin-top: 300px;
+  padding: 14px 30px;
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+
+#id {
+  width: 0 auto;
+  height: 80vh;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+
+.container2 {
+  margin-top: 100px;
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  padding: 0 50px;
+}
+
+.header2 {
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+.header2 h2 {
+  font-size: 40px;
+  margin: 10px;
+}
+.header2 p {
+  font-size: 15px;
+  color: grey;
+  padding-top: 30px;
+  margin: 10px;
+}
+.about-content {
+  height: 50%;
+  text-align: left;
+  padding-left: 20px;
+  margin: 0 0 5rem 0;
+}
+.about-content p {
+  margin: 0 7rem 20px 0;
+  line-height: 1.6;
+  color: grey;
+  display: block;
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-left: 30px;
+}
+
+.about-content a {
+  margin: 3rem 0 0 2rem;
+  background-color: #383848;
+  align-items: center;
+  width: 150px;
+  text-align: center;
+}
+
+#offers {
+  height: 80vh;
+  background: url("./img/offer-background.jpg") center center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#offers .container {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#offers .title {
+  margin-top: 40px;
+  width: 93%;
+  height: auto;
+  text-align: center;
+}
+
+#offers .title h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #e4b95b;
+}
+
+#offers .title p {
+  font-size: 17px;
+  color: #fff;
+}
+
+.offers-items {
+  display: flex;
+  space-between: 5rem;
+  padding: auto;
+  margin: 40px;
+}
+.offers-items div {
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  width: auto;
+}
+
+.offers-items img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.offers-items h3 {
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+.offers-items p {
+  font-size: 15px;
+  color: grey;
+  space-between: 10px;
+  padding-top: 5px;
+}
+
+.offers-items del {
+  color: white;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+.primary-text {
+  color: #e4b95b;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* --------------------------------------- */
+
+#MENU {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  text-align: center;
+  background: #f4f2ed;
+}
+
+#MENU .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#MENU .title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#MENU .title h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+#MENU .title p {
+  font-size: 17px;
+  color: grey;
+}
+
+#MENU .menu-items {
+  display: flex;
+  justify-content: center;
+}
+
+#MENU .menu-items p {
+  color: grey;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.menu-items-left {
+  margin-right: 50px;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.menu-item img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.menu-item h3 {
+  color: #383848;
+  border-bottom: 1px dashed #c2bdbd;
+  padding-bottom: 10px;
+  position: relative;
+  font-size: 20px;
+  text-align: left;
+}
+
+.menu-item span {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.menu-item p {
+  font-weight: 500;
+  color: grey;
+}
+
+.btn.btn-third {
+  background-color: #e4b95b;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 20px;
+  display: block;
+  margin: auto;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  &:hover {
+    background-color: #383848;
+    transition: 0.5s;
+  }
+}
+
+/* ------------------------------------------------ */
+#daytime {
+  background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+  color: #fff;
+  text-align: center;
+  height: 50vh;
+}
+
+#daytime .container {
+  width: 500px;
+  margin-left: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#daytime .daytime-item {
+  margin-top: 100px;
+}
+
+#daytime h3 {
+  padding: 10px 5px;
+  margin: 10px 0 0 100px;
+  font-weight: 700;
+  font-size: 40px;
+}
+#daytime p {
+  margin: 10px 0 0 100px;
+  font-weight: 600;
+}
+
+/* ------------------------------------------ */
+/* خلفية القسم */
+#GALLARY {
+  background: url("./img/offer-background.jpg") center center/cover;
+  height: 80vh; /* ياخد طول الشاشة */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* في المنتصف عموديًا */
+  align-items: center; /* في المنتصف أفقيًا */
+  text-align: center;
+}
+
+/* العنوان */
+#GALLARY .title {
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+}
+
+/* الكونتينر */
+#GALLARY .container {
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+/* الجاليري */
+#GALLARY .img-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* تلات صور في الصف */
+  grid-template-rows: repeat(2, auto); /* صفين */
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* الصور */
+#GALLARY .img-gallery img {
+  width: 100%;
+  max-width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+/* تأثير عند المرور */
+#GALLARY .img-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+/* ----------------------------------------------------------- */
+#CONTACT {
+  background: #f4f2ed;
+  padding: 7rem 0;
+}
+
+#CONTACT .container {
+  align-item: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* max-width:900px; */
+}
+
+#CONTACT .contact-content {
+  display: flex;
+  max-width: 900px;
+  font-size: 25px;
+}
+
+#CONTACT .contact-info {
+  align-item: center;
+  padding: 0 7rem;
+  size: 300px;
+  font-size: 20px;
+  margin-bottom: 5rem;
+}
+
+#CONTACT h3 {
+  padding: 2rem 0;
+  font-size: 25px;
+  margin-right: 3rem;
+}
+
+#CONTACT p {
+  color: #9a9a9a;
+}
+
+#CONTACT .fa-solid,
+#CONTACT .fa-regular {
+  color: #e4b95b;
+}
+
+#CONTACT .fa-brands {
+  border-radius: 50%;
+  color: #fff;
+  background: #383848;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#CONTACT .contact-info a i:hover {
+  background-color: #e4b95b;
+  color: #383848;
+}
+
+#CONTACT form {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+#CONTACT form input,
+textarea {
+  display: block;
+  padding-bottom: 2rem;
+  margin-bottom: 10px;
+  background-color: #e3e2dd;
+  border: none;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+form input,
+textarea {
+  color: gray;
+  font-size: 14px;
+  font-style: italic;
+  padding: 10px 0 0 10px;
+  padding-top: ;
+}
+
+#footer {
+  background-color: #383848;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* ================== Responsive Design ================== */
+
+/* ----------- للأجهزة التابلت (من 768px لحد 1024px) ----------- */
+@media (max-width: 1024px) {
+  header {
+    height: 80vh;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 10px;
+  }
+
+  .content {
+    margin-top: 120px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    margin: 2rem 0;
+  }
+
+  .offers-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #MENU .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #daytime .container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  #GALLARY .img-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #CONTACT .contact-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #CONTACT .contact-info {
+    padding: 0;
+  }
+}
+
+/* ----------- للموبايل (من 767px وأقل) ----------- */
+@media (max-width: 767px) {
+  header {
+    height: 70vh;
+    background-position: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container img {
+    align-item: center;
+    margin-right: 15%;
+    width: 35%;
+  }
+
+  nav {
+    margin: 6px 0 0 0;
+    padding: 15px 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  .content {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .content h3 {
+    font-size: 23px;
+  }
+
+  .content p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #9a9a9a;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .about-content a {
+    text-align: center;
+    margin-left: 200px;
+    padding: 13px;
+    width: 180px;
+    height: 50px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #offers {
+    height: 95vh;
+  }
+
+  .offers-items {
+    flex-direction: column;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .offers-items div {
+    margin: 10px 0;
+  }
+
+  #MENU .menu-items {
+    flex-direction: column;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item img {
+    margin-bottom: 10px;
+    width: 180px;
+    height: auto;
+  }
+  /* ------------------------------- */
+  #daytime {
+    display: flex;
+    height: 80vh;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  #daytime.container {
+    display: flex;
+    align-item: center;
+  }
+  #daytime .container .daytime-item {
+    display: flex;
+    font-size: 10px;
+    height: 35vh;
+    width: auto;
+    margin: 0 40px;
+    padding: 0;
+  }
+  #daytime img {
+    width: 120px;
+    height: auto;
+    margin: 25px;
+  }
+  #daytime h3 {
+    font-size: 35px;
+    text-align: center;
+    margin: 25px;
+    margin-top: 33px;
+  }
+  #daytime p {
+    margin: 40px;
+    font-size: 12px;
+  }
+
+  /* ------------------------------- */
+
+  #GALLARY {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  #GALLARY .img-gallery {
+    grid-template-columns: 1fr; /* صورة واحدة في الصف */
+  }
+
+  #CONTACT .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #CONTACT form {
+    width: 90%;
+  }
+
+  #CONTACT form input,
+  textarea {
+    width: 100%;
+  }
+
+  #footer {
+    font-size: 12px;
+  }
+}
